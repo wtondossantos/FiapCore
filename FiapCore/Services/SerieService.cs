@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -26,6 +27,7 @@ namespace FiapCore.Services
     public class Serie
     {
         public int Id { get; set; }
+        [Required(ErrorMessage = "Título da série é obrigatório.")]
         public string Titulo { get; set; }
         public string Sinopse { get; set; }
     }

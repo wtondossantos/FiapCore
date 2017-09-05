@@ -44,5 +44,16 @@ namespace FiapCore.Controllers
         {
             return View();
         }
+
+        public IActionResult Edit()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Serie serie)
+        {
+            return View();
+        }
     }
 }
