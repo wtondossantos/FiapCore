@@ -16,12 +16,13 @@ namespace FiapCore.Services
 
         public List<Serie> GetAll()
         {
-            //var retorno = new List<Serie>();
-            //for (int i = 0; i < 3; i++)
-            //{
-            //    retorno.Add(new Serie() { Id = i + 1, Titulo = $"Narcos {i + 1}" });
-            //}
-            return _context.Series.ToList();
+            var retorno = new List<Serie>();
+            for (int i = 0; i < 3; i++)
+            {
+                retorno.Add(new Serie() { Id = i + 1, Titulo = $"Narcos {i + 1}" });
+            }
+            return retorno;
+            //return _context.Series.ToList();
         }
     }
     public class Serie

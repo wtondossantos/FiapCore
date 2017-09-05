@@ -1,0 +1,17 @@
+@model List<FiapCore.Service.Photo>
+
+               <ul>
+                   @foreach (var p in Model)
+    {
+                       <li>@p.title</li>
+                       <li>
+                           <img src="@p.thumbnailUrl" alt="@p.title" />
+                       </li>
+    }
+               </ul>
+
+
+    <dl>
+        <dt>Título</dt>
+        <dd><img src="" alt="" /></dd>
+    </dl>
